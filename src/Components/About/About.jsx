@@ -21,10 +21,12 @@ const About = () => {
               I am Subir, a current master's degree student in data science at
               Tampere University.
             </p>
-            <div className="about-showmore">
-              <p>See More</p>
-              <img src={arrow_icon} alt="Arrow" />
-            </div>
+            <Link to="/experience" className="about-showmore-link">
+              <div className="about-showmore">
+                <p>See More</p>
+                <img src={arrow_icon} alt=" " />
+              </div>
+            </Link>
           </div>
           <div className="about-para">
             <h1>Education</h1>

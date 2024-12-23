@@ -7,6 +7,8 @@ import About from "./Components/About/About";
 import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Pages/Education/Education";
+import Experience from "./Pages/Experience/Experience";
+
 
 const App = () => {
   return (
@@ -14,7 +16,6 @@ const App = () => {
       <div>
         <Navbar />
         <Routes>
-          {/* Define routes for each page */}
           <Route
             path="/"
             element={
@@ -27,6 +28,7 @@ const App = () => {
             }
           />
           <Route path="/education" element={<Education />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
         <Footer />
       </div>
