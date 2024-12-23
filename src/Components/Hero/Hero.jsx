@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import profile_img from '../../assets/propic.png'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
@@ -14,7 +15,9 @@ const Hero = () => {
         Experience
       </p>
       <div className="hero-action">
-        <div className="hero-connect">Connect with me</div>
+        <div className="hero-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">
+                    Connect with me
+                  </AnchorLink></div>
         <div className="hero-resume">Resume</div>
       </div>
     </div>
