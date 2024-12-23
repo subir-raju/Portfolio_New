@@ -6,7 +6,7 @@ import linkedin from "../../assets/linkedin.png";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id='contact' className="contact">
       <div className="contact-title">
         <h1>Get in touch with me</h1>
       </div>

@@ -25,3 +25,8 @@
 .nav-connect:hover{
     transform: scale(1.05);
 }
+
+.anchor-link {
+    text-decoration: none;
+    color: aliceblue;
+}
