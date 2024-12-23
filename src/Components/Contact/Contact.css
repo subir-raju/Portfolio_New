@@ -102,11 +102,10 @@
 .contact-submit {
     border: none;
     color: white;
-    border-radius: 0px;
     background: #1d1d22;
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
-    font-size: 20px;
-    padding: 20px 25px;
+    font-size: 16px;
+    padding: 10px;
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;

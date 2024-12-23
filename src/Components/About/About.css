@@ -104,6 +104,28 @@
     transform: scale(1.05);
     transition: 0.5s;
 }
+.about-showmore-link {
+  text-decoration: none;
+  color: inherit; 
+}
+.about-showmore {
+    display: flex;
+    gap: 15px;
+    width: 180px;
+    border-radius: 0px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+}
+.about-showmore:hover {
+    gap: 30px;
+    transition: 0.3s;
+    border: 2px solid #dc3545;
+    box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+}
 
 @media(max-width:768px){
     .about{
@@ -157,5 +179,13 @@
     .about-achievement p{
         text-align: center;
         font-size: 16px;
+    }
+    .about-showmore{
+        width: 160px;
+        padding: 15px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+        box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
     }
 }

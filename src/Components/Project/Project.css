@@ -39,8 +39,7 @@
 .project-showmore {
     display: flex;
     gap: 15px;
-    border-radius: 0px;
-    padding: 20px 25px;
+    padding: 10px;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 80px;

@@ -13,9 +13,21 @@
     font-size: 20px;
 }
 
+.nav-menu li p {
+    padding: 10px;
+    background: #1d1d22;
+    font-size: 20px;
+    cursor: pointer;    
+}
+
+.nav-menu li p:hover {
+    padding: 10px 20px;
+    border: 1px solid #dc3545;
+    box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+}
+
 .nav-connect{
-    padding: 20px 25px;
-    border-radius: 0px;
+    padding: 10px;
     background: #1d1d22;
     font-size: 20px;
     cursor: pointer;
@@ -26,17 +38,7 @@
 
 .nav-connect:hover{
     transform: scale(1.05);
-}
-
-.anchor-link {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.anchor-link p:hover {
-    padding: 10px 20px;
-    border: 1px solid #dc3545;
-    box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+    border: none;
 }
 .nav-mob-open{
     display: none;
@@ -70,7 +72,7 @@
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #aea4a2;
+        background-color: #1d1d22;
         width: 350px;
         height: 100%;
         z-index: 2;

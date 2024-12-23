@@ -1,11 +1,15 @@
-.footer {
+/*.footer {
     padding: 40px;
-    display: flex;
+    display: fix;
     flex-direction: column;
     gap: 30px;
     background-color: #32323c;
+} */
+.footer {
+  padding: 40px;
+  background-color: #32323c;
+  flex-shrink: 0; /* Prevents footer from shrinking */
 }
-
 .footer-bottom {
     display: flex;
     justify-content: center;

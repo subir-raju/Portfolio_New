@@ -4,8 +4,10 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background: #1d1d22;
     color: white;
     font-family: 'outfit';
+    display: flex;
+    flex-direction: column;
 }

@@ -39,19 +39,26 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
-.hero-connect{
-    padding: 20px 25px;
-    border-radius: 0px;
+.hero-connect {
+    padding: 10px;
     background: #1d1d22;
     border: 1px solid #dc3545;
     cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+    font-size: 20px;
+    color: white;
+    text-decoration: none; 
+}
+.anchor-link {
+    text-decoration: none; 
+    color: inherit; 
 }
 .hero-resume{
-    padding: 20px 35px;
+    padding: 10px;
     border-radius: 0px;
     cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+    font-size: 20px;
 }
 .hero-resume a{
     text-decoration: none;
@@ -59,10 +66,17 @@
 }
 
 .hero-connect:hover{
-    border: 2px solid #dc3545;
+    border: none;
+    transition: 0.3s;
+    transform: scale(1.05);
+
 }
 .hero-resume:hover{
+    gap: 30px;
+    transform: scale(1.05);
+    transition: 0.3s;
     border: 2px solid #dc3545;
+    box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
 }
 
 @media(max-width:768px){

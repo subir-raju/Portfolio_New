@@ -12,8 +12,7 @@ const Hero = () => {
         Hello, I'm<span> Subir</span>.
       </h1>
       <p>
-        I am a frontend developer from Tampere, Finland with 4 years of
-        Experience
+        I am a masters student majoring in Data Science.
       </p>
       <div className="hero-action">
         <div className="hero-connect">
