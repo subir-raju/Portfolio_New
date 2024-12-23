@@ -9,7 +9,7 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profile_img} alt=" " />
       <h1>
-        <span>I'm Subir Dey,</span> frontend developer based in Finland
+        Hello, I'm<span> Subir</span>.
       </h1>
       <p>
         I am a frontend developer from Tampere, Finland with 4 years of

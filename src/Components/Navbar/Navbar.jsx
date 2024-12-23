@@ -47,7 +47,7 @@ const Navbar = () => {
       </ul>
       <div className="nav-connect">
         <AnchorLink className="anchor-link" offset={50} href="#contact">
-          Connect with me
+          Let's talk
         </AnchorLink>
       </div>
     </div>
