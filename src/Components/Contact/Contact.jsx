@@ -30,7 +30,7 @@ const Contact = () => {
     }
   };
   return (
-    <div id='contact' className="contact">
+    <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch with me</h1>
       </div>
@@ -43,13 +43,19 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mail} alt=" " />
+              <a href="mailto:subirdeyraju@gmail.com">
+                <img src={mail} alt=" " />
+              </a>
             </div>
             <div className="contact-detail">
-              <img src={linkedin} alt=" " />
+              <a href="https://www.linkedin.com/in/subir-dey/">
+                <img src={linkedin} alt=" " />
+              </a>
             </div>
             <div className="contact-detail">
-              <img src={github} alt=" " />
+              <a href="https://github.com/subir-raju">
+                <img src={github} alt=" " />
+              </a>
             </div>
           </div>
         </div>
@@ -60,7 +66,9 @@ const Contact = () => {
           <input type="email" placeholder="Enter Your Email" name="email" />
           <label htmlFor="">Write your message here</label>
           <textarea name="message" rows="10" placeholder="Write your message" />
-          <button type='submit' className='contact-submit'>Submit now</button>
+          <button type="submit" className="contact-submit">
+            Submit now
+          </button>
         </form>
       </div>
     </div>
