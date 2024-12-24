@@ -3,7 +3,7 @@
   color: #9EA3BA;
   padding: 20px;
   margin-top: 100px;
-  height: 65vh;
+  height: 63vh; 
 }
 
 h1 {
@@ -14,8 +14,10 @@ h1 {
 .research-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin: 50px 250px;
+  gap: 10px; 
+  margin: 50px auto; 
+  max-width: 800px; 
+  width: 90%; 
 }
 
 .research-item {
@@ -33,7 +35,7 @@ h1 {
 }
 
 .research-title.active {
-  background-color: #561d11; 
+  background-color: #561d11;
   color: #9EA3BA;
 }
 
@@ -44,9 +46,42 @@ h1 {
   border-radius: 5px;
 }
 
-@media(max-width: 768px){
-  .research-page{
-    margin-top: 200px;
+@media (max-width: 768px) {
+  .research-page {
+    margin-top: 150px;
+    height: 70vh; 
+  }
+
+  .research-list {
+    margin: 20px auto; 
+    width: 95%; 
+    gap: 15px; 
+  }
+
+  .research-title {
+    font-size: 1rem; 
+    padding: 8px; 
+  }
+
+  .research-details {
+    font-size: 0.9rem; 
+    padding: 8px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .research-page {
+    margin-top: 100px;
     height: 65vh;
+  }
+
+  .research-title {
+    font-size: 0.9rem; 
+    padding: 6px; 
+  }
+
+  .research-details {
+    font-size: 0.8rem; 
+    padding: 6px;
   }
 }
