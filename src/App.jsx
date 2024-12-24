@@ -8,6 +8,8 @@ import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Pages/Education/Education";
 import Experience from "./Pages/Experience/Experience";
+import Research from "./Pages/Research/Research";
+import Blogs from "./Pages/Blogs/Blogs";
 
 
 const App = () => {
@@ -29,6 +31,8 @@ const App = () => {
           />
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/blog" element={<Blogs />} />
         </Routes>
         <Footer />
       </div>

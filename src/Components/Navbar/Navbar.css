@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -24,14 +24,16 @@
     font-size: 20px;
 }
 
-.nav-menu li p {
+.nav-menu li a{
     padding: 10px;
     background: #1d1d22;
     font-size: 20px;
-    cursor: pointer;    
+    cursor: pointer;  
+    text-decoration: none;  
+    color: #fff;
 }
 
-.nav-menu li p:hover {
+.nav-menu li a:hover {
     padding: 10px 20px;
     border: 1px solid #dc3545;
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);

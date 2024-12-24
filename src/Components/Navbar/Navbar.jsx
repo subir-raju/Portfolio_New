@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/logo2.svg";
 import menu_open from "../../assets/menu_open.svg";
@@ -10,6 +10,8 @@ const Navbar = () => {
   const menuRef = useRef();
   const lastScrollY = useRef(0);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const location = useLocation(); 
 
   const openMenu = () => {
     menuRef.current.style.right = "0";
@@ -35,12 +37,12 @@ const Navbar = () => {
     lastScrollY.current = currentScrollY;
   };
 
-  const handleScrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-      closeMenu(); 
-    }
+  const scrollToBottom = () => {
+    closeMenu(); 
+    window.scrollTo({
+      top: document.documentElement.scrollHeight, 
+      behavior: "smooth", 
+    });
   };
 
   useEffect(() => {
@@ -66,22 +68,21 @@ const Navbar = () => {
           alt="menu close"
           className="nav-mob-close"
         />
-        <li onClick={() => handleScrollToSection("home")}>
-          <p>Home</p>
+        <li onClick={closeMenu}>
+          <Link to="/">Home</Link>
         </li>
-        <li onClick={() => handleScrollToSection("about")}>
-          <p>About Me</p>
+        <li onClick={closeMenu}>
+          <Link to="/research">Research</Link>
         </li>
-        <li onClick={() => handleScrollToSection("project")}>
-          <p>Project</p>
-        </li>
-        <li onClick={() => handleScrollToSection("contact")}>
-          <p>Contact</p>
+        <li onClick={closeMenu}>
+          <Link to="/blog">Blog</Link>
         </li>
       </ul>
-      <div className="nav-connect">
-        <p onClick={() => handleScrollToSection("contact")}>Let's talk</p>
-      </div>
+      {location.pathname === "/" && (
+        <div className="nav-connect">
+          <p onClick={scrollToBottom}>Let's talk</p>
+        </div>
+      )}
     </div>
   );
 };
