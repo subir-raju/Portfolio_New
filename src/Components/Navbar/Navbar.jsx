@@ -35,7 +35,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img src={logo} alt="" />
+      <Link to="/">
+        <img src={logo} alt="" />
+      </Link>
       <img
         src={menu_open}
         onClick={openMenu}
