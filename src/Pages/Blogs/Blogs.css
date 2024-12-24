@@ -1,0 +1,47 @@
+.blog-page {
+  margin: 20px;
+}
+
+.blog-list{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 50px 250px;
+}
+.blog-item {
+  background-color: #1d1d22;
+  padding: 10px;
+  border: 1px dashed #dc3545;
+}
+.blog-title {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.blog-title.active {
+  color: #dc3545;
+}
+
+.blog-details {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.no-posts {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #dc3545;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blog-item {
+  margin-bottom: 20px;
+}
+
+.blog-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
