@@ -25,7 +25,7 @@ const Blog = () => {
 
   return (
     <div className="blog-page">
-      <h1>My Blog</h1>
+      <h1>My Blogs</h1>
       {blogData.length === 0 ? (
         <div className="no-posts">
           <p>Ooopsi, the author is too lazy to write something here!!</p>

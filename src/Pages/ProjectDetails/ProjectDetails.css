@@ -1,0 +1,146 @@
+.project-details-page {
+  padding: 40px 20px;
+  background-color: #1d1d22;
+  color: white;
+  min-height: 100vh;
+}
+
+.project-details-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.project-details-container {
+  display: flex;
+  gap: 30px;
+}
+
+.project-list {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-list-item {
+  padding: 15px 20px;
+  background-color: #32323c;
+  border: 1px dashed white;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.project-list-item:hover {
+  background-color: #dc3545;
+  transform: scale(1.05);
+}
+
+.project-list-item.selected {
+  border: 2px solid #dc3545;
+}
+
+.project-details {
+  width: 75%;
+  padding: 20px;
+  background-color: #32323c;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center; 
+}
+
+.project-image {
+  width: 60%; 
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.project-technologies {
+  margin-top: 20px;
+}
+
+.project-technologies h3 {
+  margin-bottom: 10px;
+  color: #dc3545;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .project-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-list {
+    width: 100%;
+    align-items: center;
+  }
+
+  .project-list-item {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .project-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .tech-icons {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tech-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details-title {
+    font-size: 2em;
+  }
+
+  .project-list-item {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .project-details {
+    padding: 15px;
+  }
+
+  .project-image {
+    margin: 15px 0;
+  }
+
+  .tech-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

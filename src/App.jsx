@@ -10,6 +10,7 @@ import Education from "./Pages/Education/Education";
 import Experience from "./Pages/Experience/Experience";
 import Research from "./Pages/Research/Research";
 import Blogs from "./Pages/Blogs/Blogs";
+import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/experience" element={<Experience />} />
           <Route path="/research" element={<Research />} />
           <Route path="/blog" element={<Blogs />} />
+          <Route path="/details" element={<ProjectDetails />} />
         </Routes>
         <Footer />
       </div>

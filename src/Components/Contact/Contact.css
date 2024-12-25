@@ -15,6 +15,7 @@
     padding: 0px 30px;
     font-size: 48px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .contact-section {
@@ -124,15 +125,22 @@
         align-items: start;
     }
 
+    .contact-title {
+        width: 100%;
+    }
     .contact-title h1{
-        padding: 0;
-        font-size: 35px;
-        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
     }
 
     .contact-section{
         flex-direction: column;
     }
+  
     .contact-left h1{
         font-size: 25px;
     }

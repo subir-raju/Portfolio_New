@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom";
 import "./About.css";
 import profile from "../../assets/profile.png";
 import arrow_icon from "../../assets/arrow_icon.svg";

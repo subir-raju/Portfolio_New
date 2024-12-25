@@ -16,6 +16,11 @@
 .navbar.hide-navbar {
   transform: translateY(-100%);
 }
+
+.navbar img{
+    height: 50px;
+    width: 90px;
+}
 .nav-menu{
     display: flex;
     align-items: center;
@@ -61,7 +66,7 @@
     display: none;
 }
 @media(max-width: 768px) {
-    .navbar {
+   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +79,10 @@
     background-color: #1d1d22;
     transition: transform 0.3s ease;
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+}
+.navbar img{
+    height: 40px;
+    width: 70px;
 }
     .nav-connect{
         display: none;

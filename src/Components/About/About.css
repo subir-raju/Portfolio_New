@@ -66,44 +66,12 @@
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
 }
 
-.about-achievements {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 80px;
-}
-
-.about-achievement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transition: 0.5s;
-}
-
-.about-achievement h1 {
-    font-size: 48px;
-    font-weight: 700;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.about-achievement p{
-    font-size: 22px;
-    font-weight: 500;
-}
 
 .about-skill:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
 
-.about-achievement:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-}
 .about-showmore-link {
   text-decoration: none;
   color: inherit; 
@@ -131,12 +99,14 @@
     .about{
         gap: 80px;
         margin: 50px 70px;
-        align-items: start;
+      
     }
 
     .about-title h1{
-        font-size: 35px;
+        font-size: 30px;
         padding: 0;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     .about-section{
@@ -148,8 +118,13 @@
     }
 
     .about-para{
-        font-size: 18px;
+        font-size: 15px;
         line-height: 32px;
+    }
+
+    .about-para h1{
+        font-size: 25px;
+        color: #6c092c;
     }
 
     .about-skill{
@@ -165,21 +140,6 @@
         height: 6px;
     }
 
-    .about-achievements{
-        justify-content: space-between;
-    }
-    .about-achievement{
-        gap: 10px;
-    }
-    .about-achievement h1{
-        font-size: 34px;
-        font-weight: 700;
-    }
-
-    .about-achievement p{
-        text-align: center;
-        font-size: 16px;
-    }
     .about-showmore{
         width: 160px;
         padding: 15px;
