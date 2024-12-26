@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
-import profile from "../../assets/profile.png";
 import arrow_icon from "../../assets/arrow_icon.svg";
+import skillsData from "../../assets/skillsData";
 
 const About = () => {
   return (
@@ -11,9 +11,6 @@ const About = () => {
         <h1>About me</h1>
       </div>
       <div className="about-section">
-        <div className="about-left">
-          <img src={profile} alt="Profile" />
-        </div>
         <div className="about-right">
           <div className="about-para">
             <h1>Work Experience</h1>
@@ -24,7 +21,7 @@ const About = () => {
             <Link to="/experience" className="about-showmore-link">
               <div className="about-showmore">
                 <p>See More</p>
-                <img src={arrow_icon} alt=" " />
+                <img src={arrow_icon} alt="Arrow Icon" />
               </div>
             </Link>
           </div>
@@ -34,26 +31,23 @@ const About = () => {
             <Link to="/education" className="about-showmore-link">
               <div className="about-showmore">
                 <p>See More</p>
-                <img src={arrow_icon} alt=" " />
+                <img src={arrow_icon} alt="Arrow Icon" />
               </div>
             </Link>
           </div>
-          <div className="about-skills">
-            <div className="about-skill">
-              <p>HTML & CSS</p>
-              <hr style={{ width: "50%" }} />
-            </div>
-            <div className="about-skill">
-              <p>React JS</p>
-              <hr style={{ width: "90%" }} />
-            </div>
-            <div className="about-skill">
-              <p>JavaScript</p>
-              <hr style={{ width: "70%" }} />
-            </div>
-            <div className="about-skill">
-              <p>Python</p>
-              <hr style={{ width: "70%" }} />
+          <div className="about-skills-section">
+            <h1>Skills</h1>
+            <div className="about-skills">
+              {skillsData.map((skill, index) => (
+                <div key={index} className="about-skill">
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="skill-icon"
+                  />
+                  <p>{skill.name}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

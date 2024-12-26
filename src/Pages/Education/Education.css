@@ -1,7 +1,7 @@
 .education-container {
   margin: 40px;
   text-align: center;
-  height: 70vh;
+  min-height: 100vh;
 }
 
 .education-content {
@@ -90,7 +90,7 @@
 .education-container {
   margin-top: 200px;
   text-align: center;
-  height: 67vh;
+  min-height: 100vh;
 }
 
   .university-list button {
@@ -115,7 +115,7 @@
 .education-container {
   margin-top: 200px;
   text-align: center;
-  height: 67vh;
+  min-height: 100vh;
 }
 
   .university-list {

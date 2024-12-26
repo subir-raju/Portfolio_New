@@ -7,9 +7,6 @@
     margin: 80px 170px;
 }
 
-.about-title {
-    position: relative;
-}
 .about-title h1 {
     padding: 0px 30px;
     font-size: 48px;
@@ -19,16 +16,15 @@
 .about-section {
     display: flex;
     gap: 80px;
+    width: 100%;
+    justify-content: center;
 }
-.about-left img{
-    height: 450px;
-    width: 400px;
-    border-radius: 10%;
-}
+
 .about-right {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    width: 100%;
 }
 
 .about-para {
@@ -37,24 +33,38 @@
     gap: 20px;
     font-size: 20px;
     font-weight: 500;
+    text-align: center; 
+}
+.about-para h1{
+     color: #ccd6f6;
 }
 
 .about-skills {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px;
+    width: 100%;
+    justify-items: center;
 }
+
 .about-skill {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
     transition: 0.3s;
 }
 
+.about-skill img {
+    height: 50px;
+    width: 50px;
+}
+
 .about-skill p {
-    min-width: 150px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
+    text-align: center;
 }
 
 .about-skill hr {
@@ -66,16 +76,20 @@
     background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
 }
 
-
 .about-skill:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
 
 .about-showmore-link {
-  text-decoration: none;
-  color: inherit; 
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
 }
+
 .about-showmore {
     display: flex;
     gap: 15px;
@@ -87,7 +101,9 @@
     transition: 0.6s;
     cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+    justify-content: center; 
 }
+
 .about-showmore:hover {
     gap: 30px;
     transition: 0.3s;
@@ -95,57 +111,103 @@
     box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
 }
 
-@media(max-width:768px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-      
+
+
+@media (max-width: 768px) {
+    .about {
+        gap: 60px;
+        margin: 50px 20px;
     }
 
-    .about-title h1{
+    .about-title h1 {
         font-size: 30px;
         padding: 0;
         text-align: center;
         text-transform: uppercase;
     }
 
-    .about-section{
+    .about-section {
         flex-direction: column;
+        gap: 40px;
     }
 
-    .about-left{
-        display: none;
+    .about-right {
+        width: 100%;
+        padding: 0 10px;
     }
 
-    .about-para{
-        font-size: 15px;
-        line-height: 32px;
+    .about-para {
+        font-size: 16px;
+        line-height: 28px;
     }
 
-    .about-para h1{
+    .about-para h1 {
         font-size: 25px;
-        color: #6c092c;
+       
     }
 
-    .about-skill{
-        gap: 20px;
-        align-items: center;
+    .about-skills {
+        grid-template-columns: repeat(2, 1fr); 
     }
 
-    .about-skill p{
-        font-size: 20px;
+    .about-skill img {
+        height: 30px;
+        width: 30px;
     }
 
-    .about-skill hr{
+    .about-skill p {
+        font-size: 16px;
+        min-width: 120px;
+    }
+
+    .about-skill hr {
         height: 6px;
     }
 
-    .about-showmore{
+    .about-showmore {
         width: 160px;
-        padding: 15px;
+        padding: 10px;
         font-size: 18px;
-        margin: 50px auto;
+        margin: 30px auto;
         cursor: pointer;
         box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        margin: 60px 50px;
+        gap: 70px;
+    }
+
+    .about-title h1 {
+        font-size: 40px;
+    }
+
+    .about-section {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .about-para {
+        font-size: 18px;
+    }
+
+    .about-skill img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .about-skill p {
+        font-size: 20px;
+    }
+
+    .about-skill hr {
+        height: 7px;
+    }
+
+    .about-showmore {
+        width: 180px;
+        font-size: 20px;
     }
 }

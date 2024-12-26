@@ -40,13 +40,17 @@
 .project-showmore-link {
   text-decoration: none;
   color: inherit; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .project-showmore {
     display: flex;
     gap: 15px;
-    width: 180px;
+    width: 160px;
     border-radius: 0px;
-    padding: 10px;
+    padding: 15px;
     font-size: 22px;
     font-weight: 500;
     transition: 0.6s;
@@ -92,6 +96,7 @@
         padding: 16px 25px;
         font-size: 18px;
         margin: 50px auto;
+        width: 140px;
         cursor: pointer;
         box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
     }
