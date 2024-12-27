@@ -7,9 +7,10 @@
 
 .project-details-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 2.5em;
   color: #fff;
+  margin-top: 50px;
 }
 
 .project-details-container {
@@ -116,11 +117,17 @@
     width: 35px;
     height: 35px;
   }
+
+  .project-details-title {
+    font-size: 2em;
+    margin-top: 100px; /* Adjust this value based on your navbar height */
+  }
 }
 
 @media (max-width: 480px) {
   .project-details-title {
     font-size: 2em;
+    margin-top: 80px; /* Adjust this value based on your navbar height */
   }
 
   .project-list-item {

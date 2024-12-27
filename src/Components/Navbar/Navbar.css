@@ -21,6 +21,11 @@
     height: 50px;
     width: 90px;
 }
+.navbar img:hover{
+    height: 50px;
+    width: 90px;
+    box-shadow: 0 .5rem 1rem rgba(220, 53, 69, .15);
+}
 .nav-menu{
     display: flex;
     align-items: center;

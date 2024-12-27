@@ -10,21 +10,21 @@ const Education = () => {
       degree: "Master's in Data Science",
       duration: " August 2023 - Present",
       description:
-        "Currently pursuing a Master's degree in Data Science, with a focus on AI, Machine Learning, and Data Analytics. Done with all the course works, now focusing mainly on my thesis.",
+        "I am currently pursuing a Master's degree in Data Science at Tampere University, where I am honing my skills in machine learning, artificial intelligence, and data analytics. The program offers a deep dive into data-driven problem-solving, statistical methods, and advanced AI technologies, providing me with the knowledge and tools to tackle complex challenges in data science.",
     },
     FUB: {
       title: "Freie Universität Berlin (FUB)",
       degree: "Masters in Computational Sciences",
       duration: "August 2022 - May 2023",
       description:
-        "Before starting my masters in data science in Finland, I was admitted to FUB in the Computational Sciences program for 2 semesters. But Due to long visa waiting period, I choose to move Finland, instead of Germany.",
+        "I briefly attended Freie Universität Berlin (FUB) as part of my Computational Sciences master's program. During that time, I learn some of the advanced computational techniques and modeling for data analysis.",
     },
     NSU: {
       title: "North South University (NSU)",
       degree: "Bachelor of Science in Computer Science & Engineering",
       duration: "January 2017 - May 2021",
       description:
-        "Completed my undergraduation with distinction (Magna Cum Laude). My major in bachelor was in Networking.",
+        "I completed my Bachelor’s degree in Computer Science and Engineering from North South University (NSU). During my undergraduate studies, I gained a solid foundation in computer science principles, software engineering, and programming languages. I worked on various projects and research, which sparked my interest in data science and machine learning.",
     },
   };
 
@@ -64,11 +64,10 @@ const Education = () => {
           </p>
           <p>
             <strong>Duration:</strong>{" "}
-            {educationDetails[selectedUniversity].duration}
+            <i>{educationDetails[selectedUniversity].duration}</i>
           </p>
           <p>
-            <strong></strong>{" "}
-            {educationDetails[selectedUniversity].description}
+            <strong></strong> {educationDetails[selectedUniversity].description}
           </p>
         </div>
       </div>

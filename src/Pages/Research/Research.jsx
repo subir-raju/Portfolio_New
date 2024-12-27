@@ -11,17 +11,27 @@ const Research = () => {
         "Implementation of a Web-based Technology for Tracking Readymade Garments Manufacturing Defects",
       details:
         "Readymade garments (RMG) manufacturing defects carry a significant role in reducing the quality of the products. Real-time production data tracking can play an important role to track those defects. A web-based software like InTrack can be a pioneer to produce that trackable data. InTrack is a Quality Control (QC) web-application to track RMG manufacturing defects using production line data. It requires complex architectural decisions for the backend and intricate management of frontend states and components. We have studied in-depth into the engineering of such a data intensive web-application and applicable for the RMG industies.",
-        
     },
     {
       id: 2,
-      title: "InTrack |A web-based technology to help the garments industry to detect defects in readymade garments",
-      details: "As part of the Senior Design Project, developed a prototype of a web-based data-driven technology that can help detect defects in manufacturing readymade garments in real->me.",
+      title:
+        "InTrack |A web-based technology to help the garments industry to detect defects in readymade garments",
+      details:
+        "As part of the Senior Design Project, developed a prototype of a web-based data-driven technology that can help detect defects in manufacturing readymade garments in real->me.",
     },
     {
       id: 3,
-      title: "Docket | A website to track and share movies, TV shows, anime, games, and books.",
-      details: "As part of Junior Design Projects, developed a website through which users can keep track of movies, TV shows, anime, games and books they watched/played/read or are watching/playing/ reading and pos>ng reviews/blogs.",
+      title:
+        "Docket | A website to track and share movies, TV shows, anime, games, and books.",
+      details:
+        "As part of Junior Design Projects, developed a website through which users can keep track of movies, TV shows, anime, games and books they watched/played/read or are watching/playing/ reading and pos>ng reviews/blogs.",
+    },
+    {
+      id: 4,
+      title:
+        "Comparison of Different Convolutional Neural Network Architectures in classifying Dhaka City Traffic",
+      details:
+        "In this research, our team explored few Convolutional Neural Network(CNN) architectures and compared their results for classifying traffic patterns in Dhaka city. We tried to identify the most effective model for accurately identifying and cateforizing vehicle types and road conditions. We assessed the CNN architectures' performances by fine tuning the parameters and optimizing models to achieve the best classification accuracy. This research can contribute to more intelligent traffic management systems and support real-time decision making for urban planning.",
     },
   ];
 

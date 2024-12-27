@@ -12,7 +12,10 @@ const Hero = () => {
         Hello, I'm<span> Subir</span>.
       </h1>
       <p>
-        I am a masters student majoring in Data Science.
+        A master’s student in Data Science at Tampere
+        University. I specialize in machine learning, AI, and data analytics,
+        with hands-on experience building AI-driven applications and solving
+        real-world problems.
       </p>
       <div className="hero-action">
         <div className="hero-connect">
@@ -21,8 +24,9 @@ const Hero = () => {
           </AnchorLink>
         </div>
         <div className="hero-resume">
-         <a href={pdf}
-          download={"resume.pdf"}>Resume </a>
+          <a href={pdf} download={"resume.pdf"}>
+            Resume{" "}
+          </a>
         </div>
       </div>
     </div>
