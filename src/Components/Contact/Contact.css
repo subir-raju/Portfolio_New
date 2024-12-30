@@ -151,8 +151,10 @@
         gap: 20px;
     }
 
-    .contact-details img{
-        width: 60px;
+    .contact-detail img {
+        box-sizing: border-box;
+        width: 40px;
+        height: 40px;
     }
     .contact-right label{
         font-size: 20px;

@@ -39,6 +39,16 @@
 .about-para h1{
      color: #ccd6f6;
 }
+.about-skills-section h1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center; 
+    color: #ccd6f6;
+    margin-bottom: 100px;
+}
 
 .about-skills {
     display: grid;
