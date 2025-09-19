@@ -10,7 +10,7 @@ const Education = () => {
       degree: "Master's in Data Science",
       duration: " August 2023 - Present",
       description:
-        "I am currently pursuing a Master's degree in Data Science at Tampere University, where I am honing my skills in machine learning, artificial intelligence, and data analytics. The program offers a deep dive into data-driven problem-solving, statistical methods, and advanced AI technologies, providing me with the knowledge and tools to tackle complex challenges in data science.",
+        "I am pursuing a Master’s in Data Science at Tampere University, focusing on machine learning, AI, and data analytics. Through courses such as Advanced Machine Learning, Data Mining and Visualization, Statistical Methods for Data Analysis, and Big Data Analytics, I’ve gained hands-on experience in building AI-driven applications, designing machine learning models for anomaly detection and predictive analytics, and working with large-scale datasets. My studies have also strengthened my data preprocessing, feature engineering, and model evaluation skills, equipping me to turn complex data into actionable insights and practical solutions.",
     },
     FUB: {
       title: "Freie Universität Berlin (FUB)",
@@ -24,7 +24,7 @@ const Education = () => {
       degree: "Bachelor of Science in Computer Science & Engineering",
       duration: "January 2017 - May 2021",
       description:
-        "I completed my Bachelor’s degree in Computer Science and Engineering from North South University (NSU). During my undergraduate studies, I gained a solid foundation in computer science principles, software engineering, and programming languages. I worked on various projects and research, which sparked my interest in data science and machine learning.",
+        "I completed my Bachelor’s in Computer Science & Engineering at North South University, where I gained a strong foundation in software development, algorithms, and system design. I developed full-stack applications during my studies, worked on database design, and learned to implement efficient data structures and algorithms. My undergraduate projects and research experience allowed me to apply theoretical knowledge to real-world problems and sparked my interest in AI and machine learning.",
     },
   };
 

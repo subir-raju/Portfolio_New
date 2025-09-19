@@ -7,9 +7,6 @@ import skillsData from "../../assets/skillsData";
 const About = () => {
   return (
     <div id="about" className="about">
-      <div className="about-title">
-        <h1>About me</h1>
-      </div>
       <div className="about-section">
         <div className="about-right">
           <div className="about-para">

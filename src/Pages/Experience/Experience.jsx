@@ -10,21 +10,32 @@ const Experience = () => {
       position: "Full Stack Developer",
       duration: " July 2021 - January 2023",
       description:
-        "Currently pursuing a Master's degree in Data Science, with a focus on AI, Machine Learning, and Data Analytics. Done with all the course works, now focusing mainly on my thesis.",
+        "During my role as a Full Stack Developer at HypeScout Pte. Ltd., I worked on building and optimizing server-rendered web applications using React.js and Node.js, with a focus on performance and scalability. I developed RESTful APIs with Python FastAPI to enable efficient communication between the frontend and backend, and I integrated OpenAI NLP models to create a chatbot that automated user queries, reducing the need for manual intervention and enhancing user engagement. In addition, I designed a global state management store to support the application’s complex data needs, collaborated closely with cross-functional teams to deliver user-friendly solutions, and applied testing frameworks to ensure the robustness of speech- and language-driven applications.",
     },
     ex2: {
       title: "North South University",
-      position: "Masters in Computational Sciences",
-      duration: "August 2022 - May 2023",
-      description:
-        "Before starting my masters in data science in Finland, I was admitted to FUB in the Computational Sciences program for 2 semesters. But Due to long visa waiting period, I choose to move Finland, instead of Germany.",
-    },
-    NSU: {
-      title: "North South University (NSU)",
-      position: "Bachelor of Science in Computer Science & Engineering",
-      duration: "January 2017 - May 2021",
-      description:
-        "Completed my undergraduation with distinction (Magna Cum Laude). My major in bachelor was in Networking.",
+      position: "Research Assistant",
+      duration: "February 2021 - May 2021",
+      description: (
+        <>
+          As a Research Assistant, I designed and implemented a data
+          preprocessing and visualization pipeline to handle large-scale
+          industrial datasets, enabling cleaner and more insightful analysis. My
+          work involved applying machine learning algorithms for anomaly
+          detection, which improved the reliability and accuracy of data-driven
+          insights. This research led to a peer-reviewed IEEE publication
+          (2021), which I co-authored, available{" "}
+          <a
+            href="https://ieeexplore.ieee.org/document/9498295"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline"
+          >
+            here
+          </a>
+          .
+        </>
+      ),
     },
   };
 
@@ -49,25 +60,18 @@ const Experience = () => {
           >
             North South University
           </button>
-          <button
-            onClick={() => handleUniversityChange("NSU")}
-            className={selectedUniversity === "NSU" ? "selected" : ""}
-          >
-            Tampere University
-          </button>
         </div>
         <div className="education-details">
           <h2>{experienceDetails[selectedUniversity].title}</h2>
           <p>
-            <strong></strong>{" "}
-            {experienceDetails[selectedUniversity].position}
+            <strong></strong> {experienceDetails[selectedUniversity].position}
+          </p>
+          <p>
+            <strong></strong> {experienceDetails[selectedUniversity].duration}
           </p>
           <p>
             <strong></strong>{" "}
-            {experienceDetails[selectedUniversity].duration}
-          </p>
-          <p>
-            <strong></strong> {experienceDetails[selectedUniversity].description}
+            {experienceDetails[selectedUniversity].description}
           </p>
         </div>
       </div>
