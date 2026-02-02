@@ -15,7 +15,7 @@ import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/iamdey/">
       <div>
         <Navbar />
         <Routes>
