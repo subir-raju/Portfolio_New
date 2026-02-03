@@ -7,7 +7,7 @@ const project_data1 = [
     title: "InTrack",
     w_img: project3_img,
     description:
-      "TA web-based technology to help the garments industry to detect the defects in readymade garments. As a part of CSE499 (Senior Design Project) course, developed a prototype of a web-based technology that can help detecting the readymade garments manufacturing defects. The owner can easily keep track in all the information instantly.",
+      "A web-based technology to help the garments industry to detect the defects in readymade garments. As a part of CSE499 (Senior Design Project) course, developed a prototype of a web-based technology that can help detecting the readymade garments manufacturing defects. The owner can easily keep track in all the information instantly.",
     technologies: [
       {
         name: "ReactJS",
